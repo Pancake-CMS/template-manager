@@ -1,0 +1,21 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../node-manager/node-manager.html">
+
+<dom-module id="template-manager">
+    <template>
+        <style type="text/css">
+        :host {
+                display: none;
+            }
+            :host([active]){
+                display: block;
+            }
+        </style>
+        <node-manager fbnode="templates" route="{{route}}"></node-manager>
+    </template>
+    <script>
+        Polymer({
+            is: 'template-manager'
+        });
+    </script>
+</dom-module>
