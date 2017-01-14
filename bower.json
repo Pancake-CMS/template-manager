@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "node-manager": "pancake-cms-node-manager#*"
+    "node-manager": "pancake-cms-node-manager#*",
+    "template-adder": "pancake-cms-template-adder#*"
   }
 }

@@ -1,5 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../node-manager/node-manager.html">
+<link rel="import" href="../template-adder/template-adder.html">
 
 <dom-module id="template-manager">
     <template>
@@ -11,8 +12,14 @@
                 display: block;
                 padding-top: 50px;
             }
+            template-adder {
+                position: fixed;
+                bottom: 50px;
+                right: 50px;
+            }
         </style>
         <node-manager fbnode="templates" route="{{route}}"></node-manager>
+        <template-adder route="{{route}}"></template-adder>
     </template>
     <script>
         Polymer({
